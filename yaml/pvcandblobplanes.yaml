@@ -1,0 +1,28 @@
+storage:
+  planes:
+  - name: mypvcdaliplane
+    prefix: /var/lib/HPCCSystems/dalistorage
+    pvc: "dali-azstorage-hpcc-azurefile-pvc"
+  - name: mypvcdataplane
+    prefix: /var/lib/HPCCSystems/hpcc-data
+    pvc: "data-azstorage-hpcc-azurefile-pvc"
+  - name: mypvcdllplane
+    pvc: "dll-azstorage-hpcc-azurefile-pvc"
+    prefix: /var/lib/HPCCSystems/queries
+  - name: myblobdataaplane
+    prefix: azure://jcshpccdemosa@jcshpccdemo-container
+    # secret: azure-jcshpccdemosa # Future, for now secret implied to be <prefix-protocol>-<prefix-account>
+
+  daliStorage:
+    plane: mypvcdaliplane
+  dllStorage:
+    plane: mypvcdllplane
+  dataStorage:
+    plane: mypvcdataplane
+    #plane: myblobdataplane
+
+
+secrets:
+  storage:
+    azure-jcshpccdemosa: jcshpccdemosecret
+

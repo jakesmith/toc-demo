@@ -1,0 +1,9 @@
+storage:
+  dllStorage:
+    existingClaim: "dll-azstorage-hpcc-azurefile-pvc"
+
+  daliStorage:
+    existingClaim: "dali-azstorage-hpcc-azurefile-pvc"
+
+  dataStorage:
+    existingClaim: "data-azstorage-hpcc-azurefile-pvc"
