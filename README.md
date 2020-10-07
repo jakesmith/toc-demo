@@ -16,3 +16,7 @@
 [ https://docs.microsoft.com/en-us/azure/load-balancer/skus ]
 
 [ https://docs.microsoft.com/en-us/azure/aks/use-multiple-node-pools ]
+
+[ https://youtu.be/EeM0FQ6fBHc ]
+
+[ https://github.com/hpcc-systems/helm-chart ]
